@@ -1,0 +1,22 @@
+.gamePort {
+    width: 700px;  
+    height: 500px;
+    margin-top: 10%; 
+    border-style: inset;
+    background: aliceblue;
+    color: navy;
+    text-align: justify;
+
+}
+
+
+#wordClue {
+
+    text-align: center;
+}
+#startButton {
+
+    position: relative;
+    left: 315px;
+    top: 250px;
+}
