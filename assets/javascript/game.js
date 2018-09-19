@@ -23,6 +23,14 @@ function wrongGuess() {
 }
 
 
+function winGame() {
+
+    if ( answerFive[0] != "_" && answerFive[1] != "_" && answerFive[2] != "_" && answerFive[3] != "_" && answerFive [4] != "_"){
+
+        document.getElementById("gamePort").innerHTML = "You win! Refresh to play again."
+    }
+}
+
 
 
 
@@ -87,27 +95,32 @@ if (wordPick === "Mario") {
 
         answerFive[0]="m"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
 
     }else if (input === "a"){
 
         answerFive[1]="a"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input ==="r"){
 
         answerFive[2] = "r"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input ==="i"){
 
         answerFive[3] = "i"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input === "o"){
 
         answerFive[4] = "o"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else {
 
@@ -132,27 +145,33 @@ if (wordPick === "Mario") {
 
         answerFive[0]="y"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
 
     }else if (input === "o"){
 
         answerFive[1]="o"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input ==="s"){
 
         answerFive[2] = "s"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input ==="h"){
 
         answerFive[3] = "h"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input === "i"){
 
         answerFive[4] = "i"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
+
     }else {
 
         console.log("wrong guess")
@@ -177,22 +196,26 @@ if (wordPick === "Mario") {
         answerFive[0]="s"
         answerFive[4]="s"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
 
     }else if (input === "a"){
 
         answerFive[1]="a"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input ==="m"){
 
         answerFive[2] = "m"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input ==="u"){
 
         answerFive[3] = "u"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else {
 
@@ -218,27 +241,32 @@ if (wordPick === "Mario") {
 
         answerFive[0]="k"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
 
     }else if (input === "i"){
 
         answerFive[1]="i"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input ==="r"){
 
         answerFive[2] = "r"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input ==="b"){
 
         answerFive[3] = "b"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
 
     }else if (input === "y"){
 
         answerFive[4] = "y"
         document.getElementById ("wordClue").innerHTML = answerFive
+        winGame()
     }else {
 
         console.log("wrong guess")
